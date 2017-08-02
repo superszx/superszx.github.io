@@ -3,18 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>蒹葭苍苍，白露为霜</title>
+  <title>用七牛对象存储替换ueditor的上传逻辑 | 蒹葭苍苍，白露为霜</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="C# PHP WEB开发">
-<meta property="og:type" content="website">
-<meta property="og:title" content="蒹葭苍苍，白露为霜">
-<meta property="og:url" content="http://superszx.github.io/index.html">
+  <meta name="description" content="##有什么用？ueditor上传图片默认是存储到主站上的，当访问这些静态资源的时候会大量占用主站带宽，把主站堵死，修改ueditor的上传逻辑，使用七牛的对象存储。 ##看看ueditor的配置文件/path/to/ueditor/ueditor.config.js可以发现它是使用一个一般处理程序/path/to/ueditor/net/controller.ashx来处理上传图片的。123456">
+<meta name="keywords" content="所见即所得编辑器,对象存储,网站优化">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用七牛对象存储替换ueditor的上传逻辑">
+<meta property="og:url" content="http://superszx.github.io/2017/08/02/用七牛对象存储替换ueditor的上传逻辑/index.html">
 <meta property="og:site_name" content="蒹葭苍苍，白露为霜">
-<meta property="og:description" content="C# PHP WEB开发">
+<meta property="og:description" content="##有什么用？ueditor上传图片默认是存储到主站上的，当访问这些静态资源的时候会大量占用主站带宽，把主站堵死，修改ueditor的上传逻辑，使用七牛的对象存储。 ##看看ueditor的配置文件/path/to/ueditor/ueditor.config.js可以发现它是使用一个一般处理程序/path/to/ueditor/net/controller.ashx来处理上传图片的。123456">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-08-02T03:09:22.776Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="蒹葭苍苍，白露为霜">
-<meta name="twitter:description" content="C# PHP WEB开发">
+<meta name="twitter:title" content="用七牛对象存储替换ueditor的上传逻辑">
+<meta name="twitter:description" content="##有什么用？ueditor上传图片默认是存储到主站上的，当访问这些静态资源的时候会大量占用主站带宽，把主站堵死，修改ueditor的上传逻辑，使用七牛的对象存储。 ##看看ueditor的配置文件/path/to/ueditor/ueditor.config.js可以发现它是使用一个一般处理程序/path/to/ueditor/net/controller.ashx来处理上传图片的。123456">
   
     <link rel="alternate" href="/atom.xml" title="蒹葭苍苍，白露为霜" type="application/atom+xml">
   
@@ -67,9 +69,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-用七牛对象存储替换ueditor的上传逻辑" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-用七牛对象存储替换ueditor的上传逻辑" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/08/02/用七牛对象存储替换ueditor的上传逻辑/" class="article-date">
   <time datetime="2017-08-02T02:31:44.000Z" itemprop="datePublished">2017-08-02</time>
@@ -86,8 +86,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/02/用七牛对象存储替换ueditor的上传逻辑/">用七牛对象存储替换ueditor的上传逻辑</a>
+    <h1 class="article-title" itemprop="name">
+      用七牛对象存储替换ueditor的上传逻辑
     </h1>
   
 
@@ -112,211 +112,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="w-在asp-net-mvc中使用log4net" class="article article-type-w" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/08/02/在asp-net-mvc中使用log4net/" class="article-date">
-  <time datetime="2017-08-02T01:38:25.000Z" itemprop="datePublished">2017-08-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/02/在asp-net-mvc中使用log4net/">在asp.net mvc中使用log4net</a>
-    </h1>
+    <a href="/2017/08/02/在asp-net-mvc中使用log4net/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">在asp.net mvc中使用log4net</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://superszx.github.io/2017/08/02/在asp-net-mvc中使用log4net/" data-id="cj5uelhyf00063o9c2hza65bh" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-test-category" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/08/01/test-category/" class="article-date">
-  <time datetime="2017-08-01T08:33:12.000Z" itemprop="datePublished">2017-08-01</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Ect/">Ect</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/01/test-category/">test-category</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://superszx.github.io/2017/08/01/test-category/" data-id="cj5uelhyf00043o9cabpxm1j3" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/搭建博客/">搭建博客</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-testpage" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/08/01/testpage/" class="article-date">
-  <time datetime="2017-08-01T08:00:33.000Z" itemprop="datePublished">2017-08-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/01/testpage/">testpage</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://superszx.github.io/2017/08/01/testpage/" data-id="cj5uelhyf00093o9cq0f6k57j" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hexo-github-Page" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/08/01/hexo-github-Page/" class="article-date">
-  <time datetime="2017-08-01T07:16:56.000Z" itemprop="datePublished">2017-08-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/01/hexo-github-Page/">hexo + github Page</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#npm 安装 hexo时发生ERR! code UNABLE_TO_VERIFY_LEAF_SIGNATURE</p>
-<p>——<a href="http://stackoverflow.com/questions/20747817/error-unable-to-verify-leaf-signature-phonegap-installation" target="_blank" rel="external">呵呵</a><br>·npm config set strict-ssl false·</p>
-<p>#hexo部署到到github Page的时候SSL certificate problem: unable to get local issuer certificate</p>
-<p>·git config –global http.sslVerify false·</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://superszx.github.io/2017/08/01/hexo-github-Page/" data-id="cj5uelhy000003o9cr2p9sz5n" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/搭建博客/">搭建博客</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/08/01/hello-world/" class="article-date">
-  <time datetime="2017-08-01T06:31:43.847Z" itemprop="datePublished">2017-08-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/01/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://superszx.github.io/2017/08/01/hello-world/" data-id="cj5uelhy000013o9cprm4pb9j" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
